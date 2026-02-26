@@ -1,0 +1,4 @@
+/Users/vagner/Projects/Digitavox/mobile/digitavox/Digitavox/bin/Release/net8.0-android/publish/br.usp.digitavox_USP-Signed.aab
+/Users/vagner/Projects/Digitavox/mobile/digitavox/Digitavox/bin/Release/net8.0-android/publish/br.usp.digitavox_USP.aab
+/Users/vagner/Projects/Digitavox/mobile/digitavox/Digitavox/bin/Release/net8.0-android/publish/br.usp.digitavox_USP-Signed.apk
+/Users/vagner/Projects/Digitavox/mobile/digitavox/Digitavox/bin/Release/net8.0-android/publish/_Microsoft.Android.Resource.Designer.dll

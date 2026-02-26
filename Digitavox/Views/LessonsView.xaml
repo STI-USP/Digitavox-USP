@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Digitavox.Views.LessonsView">
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False"/>
+    </Shell.BackButtonBehavior>
+
+    <ScrollView AutomationProperties.ExcludedWithChildren="True">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0"
+                   FormattedText = "{Binding PageFormattedLabel}"
+                   FontSize="{Binding TextSize}"
+                   Padding="10,10,5,20"/>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

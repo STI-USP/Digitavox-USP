@@ -1,0 +1,203 @@
+{
+	"type":	"CURSO",
+	"CURSO":	{
+		"Present":	{
+			"APT":	"Este curso é composto por cinco lições, cada lição é a letra de uma música para você treinar a sua digitação. Preste bastante atenção no que for falado, Lembre que começo de frase tem letra maiúscula."
+		},
+		"Instruction":	{
+			"IST":	"Na lista não aparece o nome da música, entre na lição e descobrirá qual será. A próxima lição estará disponível quando concluir a última lição exibida com êxito. Se é a primeira vez neste curso, para começar tecle enter sobre a lição 1."
+		},
+		"NOMECURSO":	"Letras de músicas para praticar a digitação",
+		"NUMEROCURSO":	3,
+		"SOMNOMECURSO":	"CUR_3",
+		"SOMAPRESENTACAO":	"",
+		"SOMINSTRUCAO":	"",
+		"QUANTIDADELICOES":	5,
+		"SOMINICURSO":	"visual",
+		"SOMFIMCURSO":	"escond",
+		"SOMINILICAO":	"mod",
+		"SOMFIMLICAO":	"prog",
+		"SOMINICIOEXERCICIO":	"branco",
+		"SOMFIMEXERCICIO":	"e-fim",
+		"SOMERROEXERCICIO":	"somerro",
+		"SOMCONCLUIULICAO":	"palmas"
+	},
+	"LICAO1":	{
+		"Present":	{
+			"APT":	"Vou ditar a letra da música \"Lua e Estrela\" de Caetano Veloso. Para digitar o acento circunflexo, solte a tecla do acento antes de soltar o Shift. Digite com atenção, lembre que uma frase começa com letra maiúscula. Lembre também de digitar barra de espaço entre as palavras e no fim do que for ditado, pois a barra de espaço no final é quem diz para o Digitavox USP falar a próxima sentença. Se tiver dúvida de qual caracter digitar, tecle F3 que o Digitavox USP falará. Se quiser saber o que falta digitar da sentença atual, tecle F4. Se teclar F1 o Digitavox USP fala as opções existentes na  janela da lição."
+		},
+		"Instruction":	{
+			"IST":	"Digite:"
+		},
+		"SOMAPRESENTACAO":	"",
+		"SOMINSTRUCAO":	"",
+		"EXER1":	"Menina do anel",
+		"EXER2":	"De lua estrela",
+		"EXER3":	"Raios de sol",
+		"EXER4":	"No céu da cidade",
+		"EXER5":	"Brilho da lua",
+		"EXER6":	"Noite é bem tarde",
+		"EXER7":	"Penso em você",
+		"EXER8":	"Fico com saudade",
+		"EXER9":	"Manhã chegando",
+		"EXER10":	"Luzes morrendo",
+		"EXER11":	"Nesse espelho",
+		"EXER12":	"Que é nossa cidade",
+		"EXER13":	"Quem é você",
+		"EXER14":	"Qual o seu nome",
+		"EXER15":	"Conta pra mim",
+		"EXER16":	"Diz como eu te encontro",
+		"EXER17":	"Mas deixa o destino",
+		"EXER18":	"Deixa ao acaso",
+		"EXER19":	"Quem sabe eu te encontro",
+		"EXER20":	"De noite no baixo",
+		"EXER21":	"Brilho da lua",
+		"EXER22":	"Noite é bem tarde",
+		"EXER23":	"Penso em você",
+		"EXER24":	"Fico com saudade",
+		"SOLETRAEXER":	"nao",
+		"REPETICOESEXER":	1,
+		"TEMPOPORCARACTER":	3,
+		"MEDIAEXER":	90,
+		"TUDO_EM_MAIUSCULO":	"nao"
+	},
+	"LICAO2":	{
+		"Present": {
+			"APT": "Vou ditar a letra da música \"Poxa\" de Gilson de Souza. Para digitar o acento circunflexo, solte a tecla do acento antes de soltar o Shift. Digite com atenção, lembre que uma frase começa com letra maiúscula. Lembre também de digitar barra de espaço entre as palavras e no fim do que for ditado, pois a barra de espaço no final é quem diz para o Digitavox USP falar a próxima sentença. se tiver dúvida de qual caracter digitar, tecle F3 que o Digitavox USP falará. Se quiser saber o que falta digitar da sentença atual, tecle F4. Se teclar F1 o Digitavox USP fala as opções existentes na  janela da lição."
+		},
+		"Instruction":	{
+			"IST":	"Digite:"
+		},
+		"SOMAPRESENTACAO":	"",
+		"SOMINSTRUCAO":	"",
+		"EXER1":	"Poxa",
+		"EXER2":	"Como foi bacana te encontrar de novo",
+		"EXER3":	"Curtindo um samba junto com meu povo",
+		"EXER4":	"Você não sabe como eu acho bom",
+		"EXER5":	"Eu te falei que você não ficava nem uma semana",
+		"EXER6":	"Longe desse poeta que tanto te ama",
+		"EXER7":	"Longe da batucada e do meu amor",
+		"EXER8":	"Pôxa",
+		"EXER9":	"Por que você não pára pra pensar um pouco",
+		"EXER10":	"Não vê que é motivo de um poeta louco",
+		"EXER11":	"Que quer o teu amor pra te fazer canção",
+		"EXER12":	"Pôxa",
+		"EXER13":	"Não vem com essa de mudar de assunto",
+		"EXER14":	"Não vê como é gostoso a gente ficar junto",
+		"EXER15":	"Mulher o teu lugar é no meu coração",
+		"SOLETRAEXER":	"nao",
+		"REPETICOESEXER":	1,
+		"TEMPOPORCARACTER":	3,
+		"MEDIAEXER":	90,
+		"TUDO_EM_MAIUSCULO":	"nao"
+	},
+	"LICAO3":	{
+		"Present":	{
+			"APT":	"Vou ditar a letra da música \"O Bem e o Mal\" de Danilo Caymmi. Digite com atenção, lembre que uma frase começa com letra maiúscula. Lembre também de digitar barra de espaço entre as palavras e no fim do que for ditado, pois a barra de espaço no final é quem diz para o Digitavox USP falar a próxima sentença. se tiver dúvida de qual caracter digitar, tecle F3 que o Digitavox USP falará. Se quiser saber o que falta digitar da sentença atual, tecle F4. Se teclar F1 o Digitavox USP fala as opções existentes na  janela da lição."
+		},
+		"Instruction":	{
+			"IST":	"Digite:"
+		},
+		"SOMAPRESENTACAO":	"",
+		"SOMINSTRUCAO":	"",
+		"EXER1":	"Eu guardo em mim",
+		"EXER2":	"Dois corações",
+		"EXER3":	"Um que é do mar",
+		"EXER4":	"Um das paixões",
+		"EXER5":	"Encanto doce",
+		"EXER6":	"Um cheiro de temporal",
+		"EXER7":	"Eu guardo em mim, um Deus, um louco, um santo",
+		"EXER8":	"Um bem um mau",
+		"EXER9":	"Eu guardo em mim",
+		"EXER10":	"Tantas canções",
+		"EXER11":	"De tanto mar",
+		"EXER12":	"Tantas manhãs",
+		"EXER13":	"Encanto doce",
+		"EXER14":	"O cheiro de um vendaval",
+		"EXER15":	"Guardo em mim, o Deus, o louco, o santo",
+		"EXER16":	"O bem o mau",
+		"SOLETRAEXER":	"nao",
+		"REPETICOESEXER":	1,
+		"TEMPOPORCARACTER":	2,
+		"MEDIAEXER":	95,
+		"TUDO_EM_MAIUSCULO":	"nao"
+	},
+	"LICAO4":	{
+		"Present":	{
+			"APT":	"Vou ditar a letra da música \"Estrela Natureza\" de Sa e Guarabyra. Digite com atenção, lembre que uma frase começa com letra maiúscula. Lembre também de digitar barra de espaço entre as palavras e no fim do que for ditado, pois a barra de espaço no final é quem diz para o Digitavox USP falar a próxima sentença."
+		},
+		"Instruction":	{
+			"IST":	"Digite:"
+		},
+		"SOMAPRESENTACAO":	"",
+		"SOMINSTRUCAO":	"",
+		"EXER1":	"Estrela natureza",
+		"EXER2":	"Precisamos de mais",
+		"EXER3":	"Te ter sempre por perto",
+		"EXER4":	"Na calma e santa paz",
+		"EXER5":	"Nos morros e nos campos",
+		"EXER6":	"No sol e no sereno",
+		"EXER7":	"Zelando por florestas",
+		"EXER8":	"Cuidando dos animais",
+		"EXER9":	"Mulher e mãe de todos",
+		"EXER10":	"O que será de nós",
+		"EXER11":	"Se a força do inimigo",
+		"EXER12":	"Calar a tua voz",
+		"EXER13":	"Que sai dos passarinhos",
+		"EXER14":	"Dos mares e dos rios",
+		"EXER15":	"Dos vales preguiçosos",
+		"EXER16":	"Dos velhos Pantanais.",
+		"SOLETRAEXER":	"nao",
+		"REPETICOESEXER":	1,
+		"TEMPOPORCARACTER":	1,
+		"MEDIAEXER":	97,
+		"TUDO_EM_MAIUSCULO":	"nao"
+	},
+	"LICAO5":	{
+		"Present": {
+			"APT": "Esta é a última lição deste curso. Vou ditar a letra da música \"A  CÚMPLICE\" de Juca Chaves. Para digitar o acento circunflexo, solte a tecla do acento antes de soltar o Shift. Digite com atenção, lembre que uma frase começa com letra maiúscula. Lembre também de digitar barra de espaço entre as palavras e no fim do que for ditado, pois a barra de espaço no final é quem diz para o Digitavox USP falar a próxima sentença."
+		},
+		"Instruction":	{
+			"IST":	"Digite:"
+		},
+		"SOMAPRESENTACAO":	"",
+		"SOMINSTRUCAO":	"",
+		"EXER1":	"Eu quero uma mulher",
+		"EXER2":	"Que seja diferente",
+		"EXER3":	"De todas que já tive",
+		"EXER4":	"Todas tão iguais",
+		"EXER5":	"Que seja minha amiga",
+		"EXER6":	"Amante e confidente",
+		"EXER7":	"A cúmplice de tudo",
+		"EXER8":	"Que eu fizer a mais",
+		"EXER9":	"No corpo tem o sol",
+		"EXER10":	"No coração a lua",
+		"EXER11":	"A pele cor de sonho",
+		"EXER12":	"As formas de maçã",
+		"EXER13":	"A fina transparência",
+		"EXER14":	"Uma elegância nua",
+		"EXER15":	"O mágico fascínio",
+		"EXER16":	"O cheiro das manhãs",
+		"EXER17":	"Eu quero uma mulher",
+		"EXER18":	"De coloridos modos",
+		"EXER19":	"Que morda os lábios",
+		"EXER20":	"Sempre que for me abraçar",
+		"EXER21":	"Que o seu falar provoque",
+		"EXER22":	"O silenciar de todos",
+		"EXER23":	"E o teu silêncio",
+		"EXER24":	"Obrigue a me fazer sonhar",
+		"EXER25":	"Que saiba receber",
+		"EXER26":	"Que saiba ser bem vinda",
+		"EXER27":	"Que possa dar jeitinho",
+		"EXER28":	"Em tudo que fizer",
+		"EXER29":	"Que ao sorrir provoque",
+		"EXER30":	"Uma covinha linda",
+		"EXER31":	"De dia uma menina",
+		"EXER32":	"A noite uma mulher",
+		"SOLETRAEXER":	"nao",
+		"REPETICOESEXER":	1,
+		"TEMPOPORCARACTER":	1,
+		"MEDIAEXER":	99,
+		"TUDO_EM_MAIUSCULO":	"nao"
+	}
+}

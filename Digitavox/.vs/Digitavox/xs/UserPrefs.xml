@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{AC60D580-E6D6-4D7F-8171-1183DD5342CF}|Default">
+  <MonoDevelop.Ide.ItemProperties.Digitavox PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/vagner/Projects/Digitavox/mobile/digitavox</String>
+  </Debugger.DebugSourceFolders>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="34.0.138" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Digitavox">
+            <Node name="Digitavox" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
