@@ -2,7 +2,7 @@
 using CommunityToolkit.Mvvm.Messaging;
 using Digitavox.Helpers;
 using Digitavox.Models;
-//using Kotlin.Properties;
+
 
 namespace Digitavox.ViewModels
 {
@@ -45,7 +45,7 @@ namespace Digitavox.ViewModels
 
             var textList = new List<string>()
             {
-                //$"<p style=\"text-align:center\"> Lição {course.LessonNumber()} </p>",
+                
                 $"Lição {course.LessonNumber()}",
                 "As opções são: ",
                 "← - Falar apresentação da lição",
@@ -87,8 +87,8 @@ namespace Digitavox.ViewModels
 
             dVViewModelSpeak.SetTextAndSpeech(textList, speechList).RegisterUpdateScreen((text) =>
             {
-                //PageLabel = text;
-                //PageFormattedLabel = dVViewModelFunctions.UpdateFormattedText(text);
+                
+                
                 PageFormattedLabel = text;
                 TextSize = DVPersistence.Get<double>("fontSize");
             });
@@ -102,7 +102,7 @@ namespace Digitavox.ViewModels
                 "SecondHelp"
             });
             dVViewModelSpeak.SpeakAll();
-            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));  // [jo:231017] p/ iOS
+            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));
         }
         private void Enter()
         {

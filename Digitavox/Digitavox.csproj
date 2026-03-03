@@ -14,9 +14,8 @@
 		<!-- Display name -->
 		<ApplicationTitle>Digitavox</ApplicationTitle>
 
-		<!-- App Identifier -->
-		<!--<ApplicationId>com.companyname.digitavox</ApplicationId>-->
-		<ApplicationId>br.usp.digitavox_usp</ApplicationId>
+		<!-- App Identifier (override em ambiente local/CI para distribuição) -->
+		<ApplicationId Condition="'$(ApplicationId)' == ''">com.example.digitavox</ApplicationId>
 		<ApplicationIdGuid>7bb29c79-1497-44c6-8a14-a26048874ff4</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -47,19 +46,16 @@
 	  <CodesignProvision>Automatic</CodesignProvision>
 	  <CodesignKey>iPhone Distribution</CodesignKey>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-android|AnyCPU'">
-	  <AndroidKeyStore>True</AndroidKeyStore>
-	  <AndroidSigningKeyStore>/Users/vagner/Library/Developer/Xamarin/Keystore/Distribution/Distribution.keystore</AndroidSigningKeyStore>
-	  <!-- <AndroidSigningKeyStore>/Users/jun/Library/Developer/Xamarin/Keystore/Distribution/Distribution.keystore</AndroidSigningKeyStore> -->
-	   <!-- <AndroidSigningKeyStore>C:/Users/viana/vscode/dev/keystore/distribution/Distribution.keystore</AndroidSigningKeyStore> -->
-	  <AndroidSigningStorePass>Android</AndroidSigningStorePass>
-	  <AndroidSigningKeyAlias>distribution</AndroidSigningKeyAlias>
-	  <AndroidSigningKeyPass>Android</AndroidSigningKeyPass>
-	  <AndroidPackageFormat>aab</AndroidPackageFormat>
-	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
-	  <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
-	  <AndroidUseAapt2>True</AndroidUseAapt2>
-	</PropertyGroup>
+		<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-android|AnyCPU'">
+		  <AndroidKeyStore>True</AndroidKeyStore>
+		  <AndroidSigningKeyAlias>distribution</AndroidSigningKeyAlias>
+		  <AndroidPackageFormat>aab</AndroidPackageFormat>
+		  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+		  <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+		  <AndroidUseAapt2>True</AndroidUseAapt2>
+		</PropertyGroup>
+
+		<Import Project="Signing.local.props" Condition="Exists('Signing.local.props')" />
 	
 	<!-- Configurações para suporte a páginas de 16KB no Android -->
 	<PropertyGroup Condition="$(TargetFramework.Contains('-android'))">
@@ -68,23 +64,17 @@
 	  <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
 	</PropertyGroup>
 	
-	<ItemGroup>
-		
-		<!-- App Icon -->
-		<!--<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" "#0d94ab" />-->
-		<!--[jo:231011] original -->
+		<ItemGroup>
+			<!-- App Icon -->
+			<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#FDB420">
+				 <ForegroundScale Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">0.40</ForegroundScale>
+				 <ForegroundScale Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">0.80</ForegroundScale>
+				 <ForegroundScale Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">0.75</ForegroundScale>
+				 <ForegroundScale Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">0.75</ForegroundScale>
+	    </MauiIcon>
 
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#FDB420">
-			<!--[jo:231011] ForegroudScale="0.50" para Android, "0.80" para iOS-->
-			 <ForegroundScale Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">0.40</ForegroundScale>
-			 <ForegroundScale Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">0.80</ForegroundScale>
-			 <ForegroundScale Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">0.75</ForegroundScale>
-			 <ForegroundScale Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">0.75</ForegroundScale>
-    </MauiIcon>
-
-		<!-- Splash Screen -->
-		<!--<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" "#347dc2" BaseSize="128,128" />-->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FDB420" BaseSize="256,256" />
+			<!-- Splash Screen -->
+			<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#FDB420" BaseSize="256,256" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />

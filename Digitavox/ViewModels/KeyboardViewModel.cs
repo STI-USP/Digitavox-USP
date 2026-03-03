@@ -47,8 +47,8 @@ namespace Digitavox.ViewModels
 
             dVViewModelSpeak.SetTextAndSpeech(textList, speechList).RegisterUpdateScreen((text) =>
             {
-                //PageLabel = text;
-                //PageFormattedLabel = dVViewModelFunctions.UpdateFormattedText(text);
+                
+                
                 PageFormattedLabel = text;
                 TextSize = DVPersistence.Get<double>("fontSize");
             });
@@ -59,7 +59,7 @@ namespace Digitavox.ViewModels
         }
         private void CountEsc()
         {
-            escPressed += 1; // Se apertar outra tecla depois do primeiro esc volta para 0
+            escPressed += 1; 
             if (escPressed == 2) NavigateBack();
         }
         private async void NavigateBack()

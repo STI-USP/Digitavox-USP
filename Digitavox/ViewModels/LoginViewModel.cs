@@ -50,14 +50,14 @@ namespace Digitavox.ViewModels
             this.fingerMapping = fingerMapping;
             this.userProgress = userProgress;
             this.dVViewModelFunctions = dVViewModelFunctions;
-            //DVPersistence.CopyCourseFiles();
+            
         }
         public void OnPage()
         {
             dVViewModelFunctions.SetCurrentPageIdentifier("na tela de identificação");
             var textList = new List<string>()
             {
-                //"<p style=\"text-align:center\"> Digitavox USP - Cursos de Digitação </p>",
+                
                 "Digitavox USP - Cursos de Digitação",
                 "Digite seu nome depois tecle enter para entrar, ou tecle enter para entrar como anônimo",
                 string.Empty,
@@ -77,8 +77,8 @@ namespace Digitavox.ViewModels
 
             dVViewModelSpeak.SetTextAndSpeech(textList, speechList).RegisterUpdateScreen((text) =>
             {
-                //PageLabel = text;
-                //PageFormattedLabel = dVViewModelFunctions.UpdateFormattedText(text);
+                
+                
                 PageFormattedLabel = text;
                 TextSize = DVPersistence.Get<double>("fontSize");
             });
@@ -91,14 +91,14 @@ namespace Digitavox.ViewModels
             dVViewModelSpeak.SpeakOneLine(0, () =>
             {
                 enterName = true;
-                //enterAnswer = true;
+                
                 titleOutput = false;
                 dVViewModelSpeak.SpeakOneLine(1, () =>
                 {
                     dVViewModelSpeak.Set("maintainTag", true);
                 });
             });
-            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));  // [jo:231017] p/ iOS
+            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));
         }
 
         private void WriteName(string letter)
@@ -190,7 +190,7 @@ namespace Digitavox.ViewModels
                 if (accept == 0)
                 {
                     userProgress.NewProgress();
-                    //DVPersistence.SetDefaulConfig();
+                    
                     LoginConcluded();
                 }
                 else if (accept == 1)

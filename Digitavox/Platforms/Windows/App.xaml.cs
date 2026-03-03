@@ -5,8 +5,8 @@ using Microsoft.UI.Xaml;
 using Windows.System;
 using static Digitavox.Platforms.Windows.WinAPI;
 
-// To learn more about WinUI, the WinUI project structure,
-// and more about our project templates, see: http://aka.ms/winui-project-info.
+
+
 
 namespace Digitavox.WinUI;
 
@@ -67,8 +67,8 @@ public partial class App : MauiWinUIApplication
                 DVKeyboard.SetModifier(Modifier.Ctrl, ref keyModifiers);
             if (IsAltPressed)
                 DVKeyboard.SetModifier(Modifier.AltGr, ref keyModifiers);
-            //if (IsFunctionPressed)
-            //    DVKeyboard.SetModifier(Modifier.Fn, ref keyModifiers);
+            
+            
             if (IsShiftPressed)
                 DVKeyboard.SetModifier(Modifier.Shift, ref keyModifiers);
             if (IsNumLockOn)

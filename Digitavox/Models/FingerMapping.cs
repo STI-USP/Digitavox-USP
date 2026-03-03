@@ -60,7 +60,7 @@ namespace Digitavox.Models
             {
                 shiftPressed = !shiftPressed;
             }
-            var numLockOn = DVKeyboard.IsModifierSet(Modifier.NumLock, modifiers); // [jo:230704]
+            var numLockOn = DVKeyboard.IsModifierSet(Modifier.NumLock, modifiers);
             if ((DVKeyboard.IsModifierSet(Modifier.Ctrl, modifiers) || releasedKeysPressedTogether.Contains("Ctrl")) && keysAndFingers.TryGetProperty(key + "+c", out var mapping6))
             {
                 key += "+c";
@@ -77,7 +77,7 @@ namespace Digitavox.Models
             {
                 key += "+ag";
             }
-            var result = new FingerMappingBean("tecla não mapeada " + key, key, key, key, key, key); // [vv:230704]
+            var result = new FingerMappingBean("tecla não mapeada " + key, key, key, key, key, key);
             if (keysAndFingers.TryGetProperty(key, out var mapping))
             {
                 var code = mapping.GetProperty("code").GetString();
@@ -93,7 +93,7 @@ namespace Digitavox.Models
                         onlyModifiers = false;
                     }
                 }
-                //Console.WriteLine(pressedKeys.Count + " | " + releasedKeysPressedTogether.Count);
+                
                 if (pressedKeys.Count > 0 && withModifiers && !onlyModifiers)
                 {
                     releasedKeysPressedTogether.Add(code);
@@ -215,13 +215,13 @@ namespace Digitavox.Models
         }
         private async void Initialize()
         {
-            //var stream = await FileSystem.OpenAppPackageFileAsync("KeyMapping/Fingers.json");
+            
             var stream = await FileSystem.OpenAppPackageFileAsync("Fingers.json");
             fingers = JsonDocument.Parse(new StreamReader(stream).ReadToEnd()).RootElement;
-            //stream = await FileSystem.OpenAppPackageFileAsync("KeyMapping/Keys2Fingers.json");
+            
             stream = await FileSystem.OpenAppPackageFileAsync("Keys2Fingers.json");
             keysAndFingers = JsonDocument.Parse(new StreamReader(stream).ReadToEnd()).RootElement;
-            //stream = await FileSystem.OpenAppPackageFileAsync("KeyMapping/KeysIos2Android.json");
+            
             stream = await FileSystem.OpenAppPackageFileAsync("KeysIos2Android.json");
             keysIos2Android = JsonDocument.Parse(new StreamReader(stream).ReadToEnd()).RootElement;
             stream = await FileSystem.OpenAppPackageFileAsync("KeysWindows2Android.json");

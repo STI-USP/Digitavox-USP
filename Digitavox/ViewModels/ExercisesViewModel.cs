@@ -20,7 +20,7 @@ namespace Digitavox.ViewModels
         int exerciseNumber;
         int consecutiveErrors;
         List<string> exercisesList;
-        //string htmlColor;
+        
         string color;
         string lastInput = " ";
         string spellingActive;
@@ -127,7 +127,7 @@ namespace Digitavox.ViewModels
                     courseLesson.ContinueTimer();
                 });
             }
-            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));  // [jo:231017] p/ iOS
+            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));
 
         }
         public void BeginExercise()
@@ -210,7 +210,7 @@ namespace Digitavox.ViewModels
             dVViewModelSpeak.SetTextAndSpeech(textList, speakList)
                             .RegisterUpdateScreen((text) =>
                             {
-                                //PageLabel = text;
+                                
                                 PageFormattedLabel = text;
                                 TextSize = DVPersistence.Get<double>("fontSize");
                             });
@@ -259,7 +259,7 @@ namespace Digitavox.ViewModels
             courseLesson.PauseTimer();
             dVViewModelSpeak.SpeakRecursive(2, () =>
             {
-                //dVViewModelSpeak.ChangeLine(exerciseDisplay, exerciseSpeak, 3);
+                
                 courseLesson.ContinueTimer();
             });
         }
@@ -292,9 +292,9 @@ namespace Digitavox.ViewModels
                 dVViewModelSpeak.AttributeStyle(color, 4, index - 1);
                 inputDisplay += wordInput[index - 1];
             }
-            //string centerExercise = exerciseDisplay;
+            
             string centerInput = inputDisplay;
-            //if (index != 0) dVViewModelSpeak.ChangeLine(centerExercise, string.Empty, 3);
+            
             dVViewModelSpeak.ChangeLine(centerInput, string.Empty, 4);
         }
         private void CountConsecutiveErrors()
@@ -307,12 +307,12 @@ namespace Digitavox.ViewModels
         }
         private void WriteWord()
         {
-            //dVViewModelSpeak.ChangeLine(wordInput, string.Empty, 4);
+            
             if (DVPersistence.Get<bool>("speakInput"))
             {
-                //courseLesson.PauseTimer();
+                
                 dVViewModelSpeak.Speak(lastInput, () => {
-                    //courseLesson.ContinueTimer();
+                    
                 });
             }
             DisplayExercise(wordInput.Length);
@@ -331,12 +331,12 @@ namespace Digitavox.ViewModels
                     endLesson = false;
                     dVViewModelFunctions.GoToNextPage();
                 });
-                //player2.Play();
+                
             });
         }
         private void CountEsc()
         {
-            escPressed += 1; // Se apertar outra tecla depois do primeiro esc volta para 0
+            escPressed += 1; 
             dVViewModelSpeak.Skip();
             if (escPressed == 2)
             {
@@ -392,14 +392,14 @@ namespace Digitavox.ViewModels
                                 {
                                     CountConsecutiveErrors();
                                     dVViewModelFunctions.PlayBuzzSound();
-                                    //dVViewModelSpeak.Speak(bean.speakOnlyChar, () => { });
+                                    
                                 }
                                 else
                                 {
                                     consecutiveErrors = 0;
                                 }
                                 ControlExercises();
-                                //DisplayExercise(0);
+                                
                             }
                             else
                             {

@@ -171,7 +171,7 @@ namespace Digitavox.ViewModels
                     {
                         result.Spans.Add(DefineSpan(line, index));
                     }
-                    //letterStyleDictionary.Remove(index);
+                    
                 }
                 else
                 {
@@ -193,7 +193,7 @@ namespace Digitavox.ViewModels
             Color color;
             if (AccessibilityHelper.IsHighContrastEnabled())
             {
-                color = Colors.White; // Ajuste conforme o esquema de alto contraste
+                color = Colors.White; 
             }
             else
             {
@@ -223,7 +223,7 @@ namespace Digitavox.ViewModels
         }
         public void AttributeStyle(string letterStyle, int lineIndex, int letterIndex)
         {
-            // estilos possíveis envolvem cor e negrito
+            
             letterStyleDictionary[lineIndex] = new Tuple<string, int>(letterStyle, letterIndex);
         }
         public void ClearStyleDictionary()

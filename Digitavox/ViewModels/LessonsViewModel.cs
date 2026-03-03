@@ -2,7 +2,7 @@
 using CommunityToolkit.Mvvm.Messaging;
 using Digitavox.Helpers;
 using Digitavox.Models;
-//using Kotlin.Properties;
+
 
 namespace Digitavox.ViewModels
 {
@@ -88,7 +88,7 @@ namespace Digitavox.ViewModels
                     lessonTextOption = false;
                 }
             }
-            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));  // [jo:230831] p/ iOS
+            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));
         }
         private void UpdateTextSpeakLists()
         {
@@ -171,8 +171,8 @@ namespace Digitavox.ViewModels
             dVViewModelSpeak.SetTextAndSpeech(textList, speechList)
                             .RegisterUpdateScreen((text) =>
                             {
-                                //PageLabel = text;
-                                //PageFormattedLabel = dVViewModelFunctions.UpdateFormattedText(text);
+                                
+                                
                                 PageFormattedLabel = text;
                                 TextSize = DVPersistence.Get<double>("fontSize");
                             });

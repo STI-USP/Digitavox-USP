@@ -21,7 +21,7 @@ public partial class App : Application
             #if __ANDROID__
                 dVViewModelSpeak.Skip();
             #endif
-            //Para iOS, é tratado no AppDelegate
+            
 
             }
             else if (m.Value == "WindowResumed")
@@ -33,7 +33,7 @@ public partial class App : Application
             if (m.Value == "DisplayAlertDialog")
             {
                 dVViewModelSpeak.Skip();
-                //DisplayAlert();
+                
                 dVViewModelFunctions.DisplayAlert();
             }
             else if (m.Value == "DismissAlertDialog")
@@ -42,14 +42,14 @@ public partial class App : Application
             }
         });
 
-        // Application.Current.RequestedThemeChanged += OnRequestedThemeChanged;
+        
 
     }
-    //private void DisplayAlert()
-    //{
-    //    //await Shell.Current.DisplayAlert("Desligue o talkback", "Vá para a as configurações e desabilite o talkback ou utilize seu atalho configurado para uma melhor experiência no Digitavox USP. Para sair dessa caixa de diálogo aperte enter e lembre-se de pressionar espaço para repetir o texto da página, exceto se estiver dentro da lição.", "OK");
-    //    WeakReferenceMessenger.Default.Send(new DVMessage("CheckForScreenReader"));
-    //}
+    
+    
+    
+    
+    
     protected override Window CreateWindow(IActivationState activationState)
     {
         Window window = base.CreateWindow(activationState);
@@ -101,18 +101,18 @@ public partial class App : Application
         base.OnStart();
     }
 
-    // Desassina o evento quando a aplicação entrar em background
+    
     protected override void OnSleep()
     {
         base.OnSleep();
-        //Application.Current.RequestedThemeChanged -= OnRequestedThemeChanged;
+        
     }
 
-    // Assina o evento quando a aplicação voltar para foreground
+    
     protected override void OnResume()
     {
         base.OnResume();
-        //Application.Current.RequestedThemeChanged += OnRequestedThemeChanged;
+        
     }
 
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Digitavox.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b05b2ec08e82a0e09b2d0f587e968652607187a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+485c45fe48e341e1d8b520b9019d0ceda0de92d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Digitavox.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Digitavox.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

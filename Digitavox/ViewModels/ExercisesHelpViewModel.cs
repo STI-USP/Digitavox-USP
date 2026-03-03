@@ -86,8 +86,8 @@ namespace Digitavox.ViewModels
             dVViewModelSpeak.SetTextAndSpeech(textList, speechList)
                             .RegisterUpdateScreen((text) =>
                             {
-                                //PageLabel = text;
-                                //PageFormattedLabel = dVViewModelFunctions.UpdateFormattedText(text);
+                                
+                                
                                 PageFormattedLabel = text;
                                 TextSize = DVPersistence.Get<double>("fontSize");
                             });
@@ -101,7 +101,7 @@ namespace Digitavox.ViewModels
                 "SecondHelp"
             });
             dVViewModelSpeak.SpeakAll();
-            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));  // [jo:231017] p/ iOS
+            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));
     }
         private void Enter()
         {

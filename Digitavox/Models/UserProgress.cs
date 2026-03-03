@@ -172,7 +172,7 @@ namespace Digitavox.Models
                     lessonRepetitions.Add($"{lessonDictionary["DATAFIM"]}");
                 }
             }
-            //if (lessonRepetitions.Count == 1) lessonRepetitions.Add("Nenhuma tentativa registrada");
+            
             return lessonRepetitions;
         }
         public bool ConsultingOldLesson()

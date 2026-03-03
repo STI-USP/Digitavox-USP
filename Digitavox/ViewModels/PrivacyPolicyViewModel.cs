@@ -39,10 +39,10 @@ namespace Digitavox.ViewModels
                 {
                     dVViewModelFunctions.HandleKeyCode(bean.code);
                 }
-                //else if (!DVKeyboard.IsModifierKey(bean.code))
-                //{
-                //    dVViewModelFunctions.InvalidOption(bean.speakOnlyChar);
-                //}
+                
+                
+                
+                
             }
             return true;
         }

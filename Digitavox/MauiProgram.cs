@@ -55,8 +55,8 @@ public static class MauiProgram
         builder.Services.AddSingleton(AudioManager.Current);
 
 #if IOS || MACCATALYST
-    builder.ConfigureMauiHandlers(handlers => handlers.AddHandler(typeof(VerticalStackLayout), typeof(DVLayoutHandler))); // [jo:230622] para todos os VerticalStackLayout
-	builder.ConfigureMauiHandlers(handlers => handlers.AddHandler(typeof(Grid), typeof(DVLayoutHandler))); // [vm:231117] para todos os Grid
+    builder.ConfigureMauiHandlers(handlers => handlers.AddHandler(typeof(VerticalStackLayout), typeof(DVLayoutHandler)));
+	builder.ConfigureMauiHandlers(handlers => handlers.AddHandler(typeof(Grid), typeof(DVLayoutHandler))); 
 	DVSpeak.GetInstance().Init(null);
 #endif
 

@@ -28,7 +28,7 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/appicon.appiconset</string>
 	<key>CFBundleIdentifier</key>
-	<string>br.usp.digitavox-usp</string>
+	<string>com.example.digitavox</string>
 	<key>CFBundleDisplayName</key>
 	<string>Digitavox USP</string>
 	<key>UIAppFonts</key>

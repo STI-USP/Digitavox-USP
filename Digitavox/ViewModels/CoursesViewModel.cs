@@ -78,13 +78,13 @@ namespace Digitavox.ViewModels
                 dVViewModelFunctions.SetLastOptionLineNumber(dVViewModelSpeak.LineCount() - 2);
                 dVViewModelFunctions.SetOptionNumberStart(dVViewModelSpeak.LineCount() - courseList.Count - 2 + course.CourseNumber());
             }
-            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));  // [jo:230831] p/ iOS
+            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));
         }
         private void UpdateTextSpeakLists()
         {
             textList = new List<string>()
             {
-                //"<p style=\"text-align:center\"> Cursos de digitação </p>",
+                
                 "Cursos de digitação"
             };
             speechList = new List<string>()
@@ -110,8 +110,8 @@ namespace Digitavox.ViewModels
             }
             if (speakFromHelp == 0 || speakFromHelp == 1)
             {
-                //dVViewModelFunctions.SetOptionNumberStart(textList.Count - courseList.Count - 1 + course.CourseNumber());
-                //Option2Course();
+                
+                
                 List<string> courseTexts = new List<string>()
                 {
                     course.CourseApresentation(),
@@ -129,8 +129,8 @@ namespace Digitavox.ViewModels
             dVViewModelSpeak.SetTextAndSpeech(textList, speechList)
                             .RegisterUpdateScreen((text) =>
                             {
-                                //PageLabel = text;
-                                //PageFormattedLabel = dVViewModelFunctions.UpdateFormattedText(text);
+                                
+                                
                                 PageFormattedLabel = text;
                                 TextSize = DVPersistence.Get<double>("fontSize");
                             });

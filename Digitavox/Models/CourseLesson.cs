@@ -51,12 +51,12 @@ namespace Digitavox.Models
             if (bean.exerciseRepetitions > 1)
             {
                 bean.totalWords *= bean.exerciseRepetitions;
-                //List<string> newLessonChars = new List<string>();
-                //foreach (string lessonChar in lessonChars)
-                //{
-                //    newLessonChars.Add(lessonChar + " ");
-                //}
-                //this.lessonChars = newLessonChars;
+                
+                
+                
+                
+                
+                
             }
             List<string> newLessonChars = new List<string>();
             foreach (string lessonChar in lessonChars)
@@ -64,7 +64,7 @@ namespace Digitavox.Models
                 newLessonChars.Add(lessonChar + " ");
             }
             this.lessonChars = newLessonChars;
-            //bean.totalTime = secondsPerChar * TotalChars();
+            
             bean.totalTime = secondsPerChar * TotalChars() / timeDivider;
             this.previousMilliseconds = 0;
         }
@@ -160,9 +160,9 @@ namespace Digitavox.Models
             {
                 timeCheckpoint = DateTime.Now;
                 paused = false;
-                //timer = Application.Current.Dispatcher.CreateTimer();
+                
                 timer.Interval = TimeSpan.FromMilliseconds(bean.totalTime * 1000 - previousMilliseconds);
-                //timer.Tick += (sender, e) => timeIsOver.Invoke();
+                
                 timer.Start();
             }
         }
@@ -174,10 +174,10 @@ namespace Digitavox.Models
         {
             return lessonChars.Select(x => x.Length).Aggregate(0, (a, b) => a + b) * bean.exerciseRepetitions;
         }
-        //public int PressedChars()
-        //{
-        //    return bean.correctChars + bean.incorrectChars;
-        //}
+        
+        
+        
+        
         public int CorrectPercent()
         {
             if (bean.correctChars + bean.incorrectChars > 0)
@@ -211,10 +211,10 @@ namespace Digitavox.Models
                 return 0;
             }
         }
-        //public int CharsByMinute()
-        //{
-        //    return (bean.correctChars + bean.incorrectChars) * 60 / bean.practiceTime;
-        //}
+        
+        
+        
+        
         public string CurrentExercise()
         {
             return lessonChars[currentPhrase];
@@ -231,8 +231,7 @@ namespace Digitavox.Models
         {
             return (running || currentRepetition == bean.exerciseRepetitions) ? currentRepetition : 1;
         }
-        public void IncrementRepetition() // remover essa funcao
-        {
+        public void IncrementRepetition()        {
             currentRepetition++;
         }
         public string GetStartTime()

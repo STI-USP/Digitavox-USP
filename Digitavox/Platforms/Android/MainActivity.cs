@@ -27,15 +27,15 @@ public class MainActivity : MauiAppCompatActivity, TextToSpeech.IOnInitListener,
     protected override void OnCreate(Bundle savedInstanceState) {
         base.OnCreate(savedInstanceState);
         active = true;
-        Window.SetStatusBarColor(Android.Graphics.Color.Rgb(253, 180, 32)); //  [jo:231020] cor azul #347dc2 = (52, 125, 194) [jo:231109] cor laranja #FDB420 = (253, 180, 32s)
+        Window.SetStatusBarColor(Android.Graphics.Color.Rgb(253, 180, 32));
         am = (AccessibilityManager)GetSystemService(Context.AccessibilityService);
         WeakReferenceMessenger.Default.Register<DVMessage>(this, (r, m) => {
             if (m.Value == "WindowActivated")
             {
-                //CheckTalkback();
+                
             }
         });
-       // am.TouchExplorationStateChange += CheckTalkbackHandler;
+       
     }
     private void CheckTalkbackHandler(object sender, EventArgs e)
     {
@@ -62,8 +62,8 @@ public class MainActivity : MauiAppCompatActivity, TextToSpeech.IOnInitListener,
         DVSpeak.GetInstance().Init(this);
         base.OnResume();
         active = true;
-        //am = (AccessibilityManager)GetSystemService(Context.AccessibilityService);
-        //CheckTalkback();
+        
+        
         FullScreen();
     }
     public TextToSpeech createTextToSpeech()
@@ -111,11 +111,11 @@ public class MainActivity : MauiAppCompatActivity, TextToSpeech.IOnInitListener,
           if (e.IsFunctionPressed)
             DVKeyboard.SetModifier(Modifier.Fn, ref keyModifiers);
           if (e.IsShiftPressed)
-            DVKeyboard.SetModifier(Modifier.Shift, ref keyModifiers); // [jo:230705]
+            DVKeyboard.SetModifier(Modifier.Shift, ref keyModifiers);
           if (e.IsNumLockOn)
-            DVKeyboard.SetModifier(Modifier.NumLock, ref keyModifiers); // [jo:230705]
-          //bool handled = (p as IOnPageKeyPress).OnPageKeyPress((int)keyCode, 
-          //        32 * (e.IsNumLockOn ? 1 : 0) + 2 * (e.IsShiftPressed ? 1 : 0));
+            DVKeyboard.SetModifier(Modifier.NumLock, ref keyModifiers);
+          
+          
           bool handled = (p as IOnPageKeyPress).OnPageKeyPress((int)keyCode,
                   keyModifiers);
           if (handled) return true;
@@ -125,9 +125,9 @@ public class MainActivity : MauiAppCompatActivity, TextToSpeech.IOnInitListener,
     }
     private void FullScreen()
     {
-        //this.Window.DecorView.SystemUiVisibility = (StatusBarVisibility)
-        //    (SystemUiFlags.ImmersiveSticky | SystemUiFlags.HideNavigation |
-        //     SystemUiFlags.Fullscreen | SystemUiFlags.Immersive);
+        
+        
+        
         this.Window.DecorView.SystemUiVisibility = (StatusBarVisibility)
             (SystemUiFlags.HideNavigation | SystemUiFlags.Immersive);
     }

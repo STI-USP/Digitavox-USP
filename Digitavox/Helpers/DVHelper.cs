@@ -72,7 +72,7 @@ namespace Digitavox.Helpers {
             return Enum.IsDefined(typeof(Modifier), code);
         }
 
-  } // end class DVKeyboard
+  } 
 
   /// <summary>
   ///   Funções para detectar tipo de plataforma
@@ -98,7 +98,7 @@ namespace Digitavox.Helpers {
     public static bool IsWindows() =>
       DeviceInfo.Current.Platform == DevicePlatform.WinUI;
 
-  } // end class DVDevice
+  } 
 
   /// <summary>
   ///   Classe auxiliar para mensagens para usar com WeakReferenceMessenger
@@ -107,7 +107,7 @@ namespace Digitavox.Helpers {
 
     public DVMessage(string value) : base(value) { }
 
-  } // end class DVMessage
+  } 
 
-} // end namespace Helpers
+} 
 

@@ -11,7 +11,7 @@ namespace Digitavox.ViewModels
         int timeToCaptureNumber = 0;
         int totalOptions = 2;
         int introductionLines = 1;
-        bool answerOption; // true se estiver detectando 's' ou 'n'
+        bool answerOption; 
         bool outcome;
         bool apresentationSkiped;
         List<string> pageKeyCodes;
@@ -93,8 +93,8 @@ namespace Digitavox.ViewModels
 
             dVViewModelSpeak.SetTextAndSpeech(textList, speechList).RegisterUpdateScreen((text) =>
             {
-                //PageLabel = text;
-                //PageFormattedLabel = dVViewModelFunctions.UpdateFormattedText(text);
+                
+                
                 PageFormattedLabel = text;
                 TextSize = DVPersistence.Get<double>("fontSize");
             });
@@ -149,7 +149,7 @@ namespace Digitavox.ViewModels
         {
             userProgress.UserLogout();
             dVViewModelFunctions.LastLineIsText(false);
-            //await Shell.Current.Navigation.PopToRootAsync();
+            
             await Shell.Current.GoToAsync("../..");
         }
         private void Reject()

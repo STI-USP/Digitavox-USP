@@ -8,7 +8,7 @@
     </Shell.BackButtonBehavior>
 
     <Grid AutomationProperties.IsInAccessibleTree="False">
-        <WebView Source="https://uspdigital.usp.br/mobile/politica_privacidade/digitavox_usp.jsp" 
+        <WebView Source="https://uspdigital.usp.br/mobile/politica_privacidade/" 
                  HorizontalOptions="FillAndExpand"/>
     </Grid>
 

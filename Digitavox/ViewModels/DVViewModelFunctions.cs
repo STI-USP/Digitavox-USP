@@ -324,7 +324,7 @@ namespace Digitavox.ViewModels
             {
                 dVViewModelSpeak.Speak(onlySpokenOptions[code], () => { });
             }
-            else // dentro do exercicio
+            else 
             {
                 int spellingSpeakRate = DVPersistence.Get<int>("speakRate") - 3;
                 if (spellingSpeakRate < 1)
@@ -444,7 +444,7 @@ namespace Digitavox.ViewModels
                                 GoToNextPage();
                             });
                         });
-                    else if (DVDevice.IsIos()) // se VoiceOver estiver desativado
+                    else if (DVDevice.IsIos()) 
                         dVViewModelSpeak.Speak("Para escutar a política de privacidade o vóice ôver deve ser ativado e as teclas de setas e esqueipe devem estar configuradas para o seu uso. Para sair pressione as teclas control e esqueipe juntas e depois pressione as teclas de seta para direita e esquerda ao mesmo tempo novamente.", () =>
                         {
                             MainThread.BeginInvokeOnMainThread(() =>
@@ -504,7 +504,7 @@ namespace Digitavox.ViewModels
         private async void NavigateBack()
         {
             lastLineIsText = false;
-            //speakFromHelp = -1;
+            
             string currentPageRoute = string.Empty;
             string navigateBackRoute = "..";
             if (pageRouteStack.Count > 0)

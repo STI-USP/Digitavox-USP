@@ -13,7 +13,7 @@ namespace Digitavox.ViewModels
         int timeToCaptureNumber = 0;
         int introductionLines;
         int totalOptions = 7;
-        int answerController = -1; // números seguem as opções da lista do menu de configurações, começando em 0
+        int answerController = -1; 
         bool updateText = true;
         bool storedText = false;
         bool answerOption;
@@ -108,8 +108,8 @@ namespace Digitavox.ViewModels
 
             dVViewModelSpeak.SetTextAndSpeech(textList, speechList).RegisterUpdateScreen((text) =>
             {
-                //PageLabel = text;
-                //PageFormattedLabel = dVViewModelFunctions.UpdateFormattedText(text);
+                
+                
                 PageFormattedLabel = text;
                 TextSize = DVPersistence.Get<double>("fontSize");
             });
@@ -147,14 +147,14 @@ namespace Digitavox.ViewModels
         }
         private void ChangeSpeakRate()
         {
-            //answerController = -1;
+            
             outcome = true;
-            //DVSpeak.GetInstance().SetSpeechRate(DVPersistence.Get<int>("speakRate"));
+            
             DVSpeak.GetInstance().SetSpeechRate(currentSpeakRate);
             string speakRateOutputText = $"A velocidade de fala definida é {currentSpeakRate}. Aperte enter para salvar ou escape para descartar a alteração.";
             string speakRateOutputSpeech = $"A velocidade de fala definida é {currentSpeakRate}. Aperte êmter para salvar ou esqueipe para descartar a alteração.";
             DisplayOutcome(speakRateOutputText, speakRateOutputSpeech);
-            //answerOption = true;
+            
         }
         private void ConfirmSpeakRate()
         {
@@ -192,12 +192,12 @@ namespace Digitavox.ViewModels
         }
         private void ChangeTextSize()
         {
-            //answerController = -1;
+            
             outcome = true; 
             string fontSizeOutputText = $"O tamanho de texto definido é {(int)((DVPersistence.Get<double>("fontSize") - (DVPersistence.GetFontSize() / 2)) / (DVPersistence.GetFontSize() / 2))}. Aperte enter para salvar ou escape para descartar a alteração.";
             string fontSizeOutputSpeech = $"O tamanho de texto definido é {(int)((DVPersistence.Get<double>("fontSize") - (DVPersistence.GetFontSize() / 2)) / (DVPersistence.GetFontSize() / 2))}. Aperte êmter para salvar ou esqueipe para descartar a alteração.";
             DisplayOutcome(fontSizeOutputText, fontSizeOutputSpeech);
-            //answerOption = true;
+            
         }
         private void ConfirmTextSize()
         {
@@ -344,7 +344,7 @@ namespace Digitavox.ViewModels
                 {
                     if (bean.code == "1" || bean.code == "2" || bean.code == "3" || bean.code == "4" || bean.code == "5" || bean.code == "6" || bean.code == "7" || bean.code == "8" || bean.code == "9")
                     {
-                        //DVPersistence.Set("speakRate", int.Parse(bean.code));
+                        
                         currentSpeakRate = int.Parse(bean.code);
                         Select(bean.speakOnlyChar, () =>
                         {

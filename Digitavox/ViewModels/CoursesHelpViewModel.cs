@@ -46,7 +46,7 @@ namespace Digitavox.ViewModels
             Thread.Sleep(100);
             var textList = new List<string>()
             {
-                //$"<p style=\"text-align:center\"> {course.CourseProperty("NOMECURSO")} </p>",
+                
                 course.CourseProperty("NOMECURSO"),
                 "As opções são: ",
                 "← - Falar apresentação do curso",
@@ -80,8 +80,8 @@ namespace Digitavox.ViewModels
 
             dVViewModelSpeak.SetTextAndSpeech(textList, speechList).RegisterUpdateScreen((text) =>
             {
-                //PageLabel = text;
-                //PageFormattedLabel = dVViewModelFunctions.UpdateFormattedText(text);
+                
+                
                 PageFormattedLabel = text;
                 TextSize = DVPersistence.Get<double>("fontSize");
             });
@@ -90,7 +90,7 @@ namespace Digitavox.ViewModels
             dVViewModelFunctions.SetLastOptionLineNumber(dVViewModelSpeak.LineCount() - 1);
             dVViewModelFunctions.SetOptionNumberStart(dVViewModelSpeak.LineCount() - totalOptions - 1);
             dVViewModelSpeak.SpeakAll();
-            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));  // [jo:240226] p/ iOS
+            WeakReferenceMessenger.Default.Send(new DVMessage("BecomeFirstResponder"));
 
     }
     private void Enter()

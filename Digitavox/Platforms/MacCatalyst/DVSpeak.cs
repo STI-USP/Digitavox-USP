@@ -20,7 +20,7 @@ namespace Digitavox.PlatformsImplementations {
       Console.WriteLine("Init Speech");
       synthesizer = new AVSpeechSynthesizer();
       synthesizer.Delegate = this;
-      synthesizer.UsesApplicationAudioSession = true; // [jo:231016]
+      synthesizer.UsesApplicationAudioSession = true;
     }
 
     public partial void InitCompleted() {
@@ -30,7 +30,7 @@ namespace Digitavox.PlatformsImplementations {
     public partial void SpeakText(string text, Action onFinished) {
       var utterance = new AVSpeechUtterance(text) {
         Voice = AVSpeechSynthesisVoice.FromLanguage("pt-BR"),
-        Rate = iosSpeechRate // 0.5f
+        Rate = iosSpeechRate 
       };
       synthesizer.SpeakUtterance(utterance);
       callbacks[utterance] = onFinished;
@@ -38,7 +38,7 @@ namespace Digitavox.PlatformsImplementations {
 
     public partial void SetSpeechRate(int speechRate) {
       Console.WriteLine("Set Speech Rate");
-      iosSpeechRate = ((float)speechRate - 1) * 0.0625f + 0.5f; // ajustar 0.1f para velocidade
+      iosSpeechRate = ((float)speechRate - 1) * 0.0625f + 0.5f; 
       NSUserDefaults.StandardUserDefaults.SetFloat(iosSpeechRate, "speechRateKey");
     }
 
@@ -55,5 +55,5 @@ namespace Digitavox.PlatformsImplementations {
       catch { }
     }
 
-  } // end class DVSpeech
-} // end namespace Digitavos.PlatformsImplementarions
+  } 
+} 
