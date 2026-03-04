@@ -51,12 +51,6 @@ dotnet build Digitavox/Digitavox.csproj -f net8.0-ios
 dotnet build Digitavox/Digitavox.csproj -f net9.0-windows10.0.19041.0
 ```
 
-## Testes
-
-```bash
-dotnet test Digitavox.Tests/Digitavox.Tests.csproj
-```
-
 ## Assinatura Android (release)
 
 1. Copie `Digitavox/Signing.example.props` para `Digitavox/Signing.local.props`.

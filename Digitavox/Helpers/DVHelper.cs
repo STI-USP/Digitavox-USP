@@ -1,12 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.Messaging.Messages;
 
-///
-/// Funções auxiliares
-///
-/// Author: Jun Okamoto Jr.
-/// Date: 30/06/2023
-///
-
 namespace Digitavox.Helpers {
 
   public enum Modifier {
