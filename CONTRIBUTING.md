@@ -7,7 +7,7 @@ Obrigado por contribuir com o Digitavox USP.
 1. Abra uma issue descrevendo bug/feature.
 2. Crie uma branch a partir de `main`.
 3. Faça mudanças pequenas e objetivas.
-4. Rode build e testes antes do PR.
+4. Rode build antes do PR.
 5. Abra PR com contexto e impacto da mudança.
 
 ## Escopo deste repositório
