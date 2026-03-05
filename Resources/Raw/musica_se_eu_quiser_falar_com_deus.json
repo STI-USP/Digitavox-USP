@@ -1,0 +1,76 @@
+{
+	"type":	"CURSO",
+	"CURSO":	{
+		"Present":	{
+			"APT":	"Vou ditar a letra da música Se eu quiser falar com Deus do Gilberto Gil. Digite com atenção, lembre que uma frase começa com letra maiúscula. Lembre também de digitar barra de espaço entre as palavras e no fim do que for ditado, pois a barra de espaço no final é quem Diz para o Digitavox USP falar a próxima sentença."
+		},
+		"Instruction":	{
+			"IST":	"Como esse não é um curso de digitação convencional, ele possui apenas uma lição. Para começar tecle enter sobre a lição 1."
+		},
+		"NOMECURSO":	"Música: Se Eu Quiser Falar Com Deus - Gilberto Gil",
+		"NUMEROCURSO":	4,
+		"SOMNOMECURSO":	"CUR_4",
+		"SOMAPRESENTACAO":	"",
+		"SOMINSTRUCAO":	"",
+		"QUANTIDADELICOES":	1,
+		"SOMINICURSO":	"visual",
+		"SOMFIMCURSO":	"escond",
+		"SOMINILICAO":	"mod",
+		"SOMFIMLICAO":	"prog",
+		"SOMINICIOEXERCICIO":	"branco",
+		"SOMFIMEXERCICIO":	"e-fim",
+		"SOMERROEXERCICIO":	"somerro",
+		"SOMCONCLUIULICAO":	"palmas"
+	},
+	"LICAO1":	{
+		"Present":	{
+			"APT":	"Vou ditar a música, lembre das dicas iniciais!"
+		},
+		"Instruction":	{
+			"IST":	"Digite:"
+		},
+		"SOMAPRESENTACAO":	"",
+		"SOMINSTRUCAO":	"",
+		"EXER1":	"Se eu quiser falar com Deus",
+		"EXER2":	"Tenho que ficar a sós",
+		"EXER3":	"Tenho que apagar a luz",
+		"EXER4":	"Tenho que calar a voz",
+		"EXER5":	"Tenho que encontrar a paz",
+		"EXER6":	"Tenho que folgar os nós",
+		"EXER7":	"Dos sapatos da gravata",
+		"EXER8":	"Dos desejos dos receios",
+		"EXER9":	"Tenho que esquecer a data",
+		"EXER10":	"Tenho que perder a conta",
+		"EXER11":	"Tenho que ter mãos vazias",
+		"EXER12":	"Ter a alma e o corpo nus",
+		"EXER13":	"Se eu quiser falar com Deus",
+		"EXER14":	"Tenho que aceitar a dor",
+		"EXER15":	"Tenho que comer o pão",
+		"EXER16":	"Que o diabo amassou",
+		"EXER17":	"Tenho que virar um cão",
+		"EXER18":	"Tenho que lamber o chão",
+		"EXER19":	"Dos palácios dos castelos",
+		"EXER20":	"Suntuosos do meu sonho",
+		"EXER21":	"Tenho que me ver tristonho",
+		"EXER22":	"Tenho que me achar medonho",
+		"EXER23":	"E apesar de um mal tamanho",
+		"EXER24":	"Alegrar meu coração",
+		"EXER25":	"Se eu quiser falar com Deus",
+		"EXER26":	"Tenho que me aventurar",
+		"EXER27":	"Tenho que subir aos céus",
+		"EXER28":	"Sem cordas pra segurar",
+		"EXER29":	"Tenho que dizer adeus",
+		"EXER30":	"Dar as costas caminhar",
+		"EXER31":	"Decidido pela estrada",
+		"EXER32":	"Que ao findar vai dar em nada",
+		"EXER33":	"Nada nada nada nada",
+		"EXER34":	"Nada nada nada nada",
+		"EXER35":	"Nada nada nada nada",
+		"EXER36":	"Do que eu pensava encontrar",
+		"SOLETRAEXER":	"nao",
+		"REPETICOESEXER":	1,
+		"TEMPOPORCARACTER":	1,
+		"MEDIAEXER":	95,
+		"TUDO_EM_MAIUSCULO":	"nao"
+	}
+}

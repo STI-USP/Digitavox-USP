@@ -1,0 +1,40 @@
+# Build artifacts
+bin/
+obj/
+*.nupkg
+
+# IDE and editor files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.suo
+*.userprefs
+*.DotSettings.user
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local signing/config overrides
+Signing.local.props
+*.local.props
+
+# Signing certificates and keys (sensitive)
+*.pfx
+*.p12
+*.keystore
+*.jks
+*.snk
+
+# Test and coverage artifacts
+TestResults/
+*.coverage
+*.coveragexml
+
+# Logs and temp files
+*.log
+*.tmp
+*.cache
